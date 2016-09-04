@@ -68,15 +68,9 @@ d3.csv("data/sfr-sales.csv", format, function(err, data) {
       .attr("width", x(bins[0].x1) - x(bins[0].x0) - 1)
       .attr("height", function(d) { return height - y(d.length); });
 
-    //
-    // el.append("g")
-    //     .attr("class", "axis axis--y")
-    //     .call(d3.axisLeft(y));
-
     el.append("g")
         .attr("class", "axis axis--x")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
   })
-
 })
