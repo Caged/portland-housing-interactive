@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dbname=${1:-portland_housing}
+
+psql -f sql/sfr-sales.sql --no-psqlrc $dbname

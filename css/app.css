@@ -1,0 +1,26 @@
+body {
+  color: #333;
+}
+
+#vis {
+  margin: 0 auto;
+  height: 100vh;
+  width: 78vw;
+}
+
+.histogram-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.histogram-card div {
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+rect {
+  shape-rendering: crispEdges;
+  fill: #43a162;
+}
